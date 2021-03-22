@@ -1,0 +1,16 @@
+#products {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin: auto;
+    justify-self: center;
+    justify-content: space-between;
+}
+
+.info {
+    border: 2px solid blue;
+}
+.product-div {
+    border: 5px solid rgb(207, 112, 23);
+    text-align: center;
+}

@@ -1,29 +1,63 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Something</title>
-    </head>
 
-    <body>
-        <header id='header'>
-            <h1>Title</h1>
-            <img id='header-img' src=''>
-            <nav id='nav-bar'>
-                <a class='nav-link'></a>
-                <a class='nav-link'></a>
-                <a class='nav-link'></a>
-            </nav>
+<head>
+    <title>XATE</title>
+    <link rel='stylesheet' href='css/stylesheet.css'>
+</head>
 
-        </header>
+<body>
+    <p></p>
+    <header id='header'>
+        <img id='header-img' src='images/xate.png' width='500' alt='The company logo.'>
+        <nav id='nav-bar'>
+            <a class='nav-link' href="#products">Products</a>
+            <a class='nav-link' href='#video'>Video</a>
+            <a class='nav-link'></a>
+        </nav>
 
+    </header>
 
+    <div class='info'>
+        <h2>Tailored for you</h2>
+        <p>Custom made to your needs.</p>
+    </div>
+    <div class='info'>
+        <h2>Hundreds of products</h2>
+        <p>Choose from hundreds of different, high-quality parts.</p>
+    </div>
+    <div class='info'>
+        <h2>Ship anywhere</h2>
+        <p>Free shipping to almost anywhere in the world.</p>
+    </div>
 
+    <video width='512' height='380' id='video' controls>
+        <source src='videos/skateboards.mp4' type='video/mp4'>
+        Your browser does not support the video tag.
+    </video>
 
-        <form id='form'>
-            <label for='email'>Give us your email address:</label>
-            <input type='email' id='email' required>
-        </form>
-    </body>
+    <h2>Browse parts</h2>
+    <div id='products'>
+        <div class='product-div'>
+            <h3>Decks</h3>
+            <button type='button' id='decks-button'>Click here</button>
+        </div>
+        <div class='product-div'>
+            <h3>Griptapes</h3>
+            <button type='button' id='griptapes-button'>Click here</button>
+        </div>
+        <div class='product-div'>
+            <h3>Wheels</h3>
+            <button type='button' id='wheels-button'>Click here</button>
+        </div>
+    </div>
+
+    <form id='form'>
+        <label for='email'>Give us your email address:</label>
+        <input type='email' id='email' placeholder='example@domain.com' required>
+    </form>
+    <button type='button' id='submit'>Submit!</button>
+</body>
 
 
 
