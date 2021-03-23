@@ -7,36 +7,41 @@
 </head>
 
 <body>
-    <p></p>
+    
     <header id='header'>
         <img id='header-img' src='images/xate.png' width='500' alt='The company logo.'>
         <nav id='nav-bar'>
-            <a class='nav-link' href="#products">Products</a>
+            <a class='nav-link' href='#info'>Info</a>
             <a class='nav-link' href='#video'>Video</a>
-            <a class='nav-link'></a>
+            <a class='nav-link' href="#products">Products</a>
         </nav>
 
     </header>
-
-    <div class='info'>
+    <div class='bg-image'></div>
+    <div class='info-div' id='info'>
         <h2>Tailored for you</h2>
         <p>Custom made to your needs.</p>
     </div>
-    <div class='info'>
+    <div class='info-div'>
         <h2>Hundreds of products</h2>
         <p>Choose from hundreds of different, high-quality parts.</p>
     </div>
-    <div class='info'>
+    <div class='info-div'>
         <h2>Ship anywhere</h2>
         <p>Free shipping to almost anywhere in the world.</p>
     </div>
 
-    <video width='512' height='380' id='video' controls>
-        <source src='videos/skateboards.mp4' type='video/mp4'>
-        Your browser does not support the video tag.
-    </video>
+    <div class='video-div'>
+        <video width='512' height='380' id='video' controls>
+            <source src='videos/skateboards.mp4' type='video/mp4'>
+            Your browser does not support the video tag.
+        </video>
+    </div>
 
-    <h2>Browse parts</h2>
+    <div id='browse-parts'>
+        <h2>Browse parts</h2>
+        <p>Choose your parts, we will assemble and ship your board.</p>
+    </div>
     <div id='products'>
         <div class='product-div'>
             <h3>Decks</h3>
@@ -54,9 +59,10 @@
 
     <form id='form'>
         <label for='email'>Give us your email address:</label>
-        <input type='email' id='email' placeholder='example@domain.com' required>
+        <input type='email' id='email' placeholder='example@domain.com' required><br>
+        <button type='button' id='submit'>Submit!</button>
     </form>
-    <button type='button' id='submit'>Submit!</button>
+    
 </body>
 
 
